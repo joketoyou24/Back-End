@@ -8,7 +8,7 @@ from jose import jwt
 import models.employee as models
 import schemas.employee as schemas
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="https://back-end-production-3084.up.railway.app/login/")
 JWT_SECRET = "myjwtsecret"
 SECRET_KEY = "P1aNYGQP7at5pTa4WTYiUW0fPgmH/Gy2yC/wVGg/vfA"
 ALGORITHM = "HS256"
